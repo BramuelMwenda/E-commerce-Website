@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bimtech</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var i=0;
+        var image=[];
+        var time = 3000;
+        image[0]='website template (2).png';
+        image[1]='website template (3).png';
+        image[2]='website template (4).png';
+        function changeTime(){
+            document.slide.src=image[i];
+        if(i < image.length -1 ){
+            i++;
+        }
+        else {
+            i=0;
+        }
+        setTimeout("changeTime()",time);
+    }
+    window.onload=changeTime;
+    </script>
+    
+</head>
+<body>
+    
+    <div class="header">
+        
+        <a class="home" href="index.html">HOME</a>
+  <a  href="#">SHOP</a>
+  <a href="#">BLOG</a>
+  <a href="#">PAGES</a>
+  <a href="#">ABOUT US</a>
+  <a href="#">CONTACT US</a>
+    </div>
+    <div class="container">
+         
+    <div class="left-nav">
+        <p>ALL CATEGORIES </p>
+        <div class="categories">
+          <button class="laptop"> <a  href="#img-container">Laptops</a></button>
+            <a href="#">Phones</a>
+            <a href="#">Watches</a>
+            <a href="#"">Music</a>
+            <a href="#"">Storage</a>
+            <a href="#">Gaming</a>
+            <a href="#">Cables</a>
+            <a href="#">Networking</a>
+            <a href="#">Networking</a>
+            <a href="#">Networking</a>
+        </div>
+       
+    </div>
+    <div class="mid-nav">
+    <div class="search">
+        <button class="categories-btn">All categories</button>
+        <input type="textg" placeholder="Search products...">
+        <button class="search-btn">SEARCH</button>
+    </div>
+        <div class="img-container">
+            <img name="slide" alt="">
+        </div>
+   
+    </div>
+   
+    <div class="right-nav">
+    <p>BIG SALE BLACK FRIDAY</p>
+    <img src="website template (3).png" alt="">
+    <img src="website template (4).png" alt="">
+
+</div>
+</div>
+<script src="javascript.js"></script>
+</body>
+</html>
